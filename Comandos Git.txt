@@ -31,8 +31,8 @@ git status
  git add endereço_arquivo
 
 5.
---"descrição alteração" - comitt local / na máquina (descrição da alteração deve ser entre "" aspas duplas)
-git commit -m
+-- comitt local / na máquina (descrição da alteração deve ser entre "" aspas duplas)
+git commit -m "descrição alteração"
 
 6.
 --enviar commit local para a nuvem/servidor github
