@@ -1,0 +1,63 @@
+COMANDOS GITBASH
+
+--------------------------
+
+Para iniciar o Git Bash, ir no diretório raiz do projeto (C:\Bradesco\pfin\pfin_batch_ingestion)
+>> botão direito >> Git Bash Here
+--------------------------
+
+1.
+--baixar o projeto localmente para o computador:
+  --colar na linha de comando: 
+    --Shift + insert (equivalente a Ctrl + V)
+    --ou
+    --Botão direito > Paste
+git clone https://steps.everis.com/git/BRADESCO/pfin_batch_ingestion.git
+
+2.
+--entrar na pasta main do projeto/repositório do Github:
+cd pfin_batch_ingestion
+
+3.
+-- exibe o status do repositório (se tem arquivos alterados e não commitados, se tem arquivos pendente de fazer push, etc).
+git status
+
+4.
+--- Subir para o servidor documentos que foram incluídos ou alterados:
+ 4.1. --subir todos os arquivos que foram alterados localmente - fazer sempre antes do commit para que fique disponível para fazer commit
+ git add .
+ OU
+ 4.2. --subir um único arquivo que foi alterado localmente - fazer sempre antes do commit para que fique disponível para fazer commit
+ git add endereço_arquivo
+
+5.
+--"descrição alteração" - comitt local / na máquina (descrição da alteração deve ser entre "" aspas duplas)
+git commit -m
+
+6.
+--enviar commit local para a nuvem/servidor github
+  git push
+  ou
+  git push origin main
+
+------------------------------------------
+Outros Comandos:
+
+--cancela última alteração que foi feita no arquivo local/da máquina (equivalente a Ctrl + Z)
+git checkout endereço_arquivo
+
+--exibe as diferenças dos arquivos alterados
+git diff
+
+-- baixa do servidor para a máquina local
+git pull
+
+---------------------------
+PARA ATUALIZAR A RELEASE:
+1. Baixar do servidor para a máquina local:
+   git pull
+
+2. atualizar release:
+   git checkout release/0.0.4
+
+---------------------------
